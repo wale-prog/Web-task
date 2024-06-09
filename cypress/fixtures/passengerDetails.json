@@ -9,15 +9,19 @@
   "travelDetail": {
     "fromCity": "Belarus",
     "toCity": "Miami",
-    "departureDate": "2024/Jul/21"
+    "departureDate": "2024/Jul/21",
+    "additionalInfo": "You Wanna Hole Up In This Place Until They Come and Kill You? That’s Not A Plan. That Is An Unscheduled Funeral."
   },
 
   "billingDetail": {
     "billingName": "John Wich",
     "phone": "1 5151 5487",
+    "country": "Russia",
+    "county": " Byelorussian SSR",
     "emailAddress": "john.wich@kkillerbean.com",
     "streetAddress": "10, Cypress boulivard, QA1254A, LA",
-    "city": "Los Angeles"
+    "city": "Los Angeles",
+    "postcode": "HF254JG"
   }
 
 }

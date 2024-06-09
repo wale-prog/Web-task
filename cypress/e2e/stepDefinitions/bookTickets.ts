@@ -35,20 +35,31 @@ Given(`User click buy ticket link on the navigation bar and confirms dummy retur
 });
 
 Given(`user fills the passenger details`, () => {
-    // let something: Array<string> = dets
-    let values = data.passengerDetails
-    buyTicketPage.enterPassengerDetails(values.firstName, values.lastName, values.orderNote)
+    let passenger = data.passengerDetails
+    buyTicketPage.enterPassengerDetails(passenger.firstName, passenger.lastName, passenger.orderNote)
     buyTicketPage.selectDateOfBirth('1964', 'Sep', 2)
     buyTicketPage.selectSex()
 });
 
 Given(`user fills the travel details`, () => {
-    let values = data.travelDetail
-    
+    let details = data.travelDetail
+    buyTicketPage.enterTravelDetails(details.fromCity, details.toCity, details.departureDate, details.additionalInfo)
     
 });
 
 Given(`user fills the billing details`, () => {
+    let person = data.billingDetail
+    buyTicketPage.enterBillingDetails(
+        person.billingName, 
+        person.phone, 
+        person.emailAddress, 
+        person.country, 
+        person.streetAddress, 
+        person.city, 
+        person.county, 
+        person.postcode
+    )
+    cy.wait(10000)
     
 });
 
