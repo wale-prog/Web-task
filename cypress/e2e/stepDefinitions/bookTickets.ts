@@ -3,12 +3,17 @@
 import { Given, When, Then, Before, After } from '@badeball/cypress-cucumber-preprocessor';
 import LandingPage from '../../support/Pages/LandingPage';
 import BuyTicketPage from '../../support/Pages/BuyTicketPage';
-
+import { FixtureTypes } from 'cypress/support';
 let landingPage: LandingPage
-let buyTicketPage: BuyTicketPage;
+let buyTicketPage: BuyTicketPage
+let data: FixtureTypes
+
+
+
 Before(function() {
-    cy.fixture('passengerDetails').then(function (data) {
-        this.data = data;
+    cy.fixture('passengerDetails').then(function (cred) {
+        data = cred
+        // data.passengerDetails
     })
     landingPage = new LandingPage();
     buyTicketPage = new BuyTicketPage();
@@ -30,10 +35,16 @@ Given(`User click buy ticket link on the navigation bar and confirms dummy retur
 });
 
 Given(`user fills the passenger details`, () => {
-    
+    // let something: Array<string> = dets
+    let values = data.passengerDetails
+    buyTicketPage.enterPassengerDetails(values.firstName, values.lastName, values.orderNote)
+    buyTicketPage.selectDateOfBirth('1964', 'Sep', 2)
+    buyTicketPage.selectSex()
 });
 
 Given(`user fills the travel details`, () => {
+    let values = data.travelDetail
+    
     
 });
 

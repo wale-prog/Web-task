@@ -10,6 +10,6 @@ Scenario: Buying a ticket on the site, then verify card reject error message
   And user fills the passenger details
   And user fills the travel details
   And user fills the billing details
-  And user select debit and credit care option
+  And user select debit and credit card option
   When user fill the card details and click place order
-  Then an error "Your care number is invalid" is displayed 
+  Then an error "Your card number is invalid" is displayed 
