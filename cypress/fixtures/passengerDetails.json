@@ -1,0 +1,23 @@
+{
+  "passengerDetails": {
+    "firstName": "John",
+    "lastName": "Wich",
+    "orderNote": "Friendship Means Little When It's Convenient",
+    "DateOfBirth": "02/09/1964"
+  },
+
+  "travelDetail": {
+    "fromCity": "Belarus",
+    "toCity": "Mian=mi",
+    "departureDate": "02/05/2022"
+  },
+
+  "billingDetail": {
+    "billingName": "John Wich",
+    "phone": "1 5151 5487",
+    "emailAddress": "john.wich@kkillerbean.com",
+    "streetAddress": "10, Cypress boulivard, QA1254A, LA",
+    "city": "Los Angeles"
+  }
+
+}
