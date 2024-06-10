@@ -18,10 +18,15 @@
     "phone": "1 5151 5487",
     "country": "Russia",
     "county": " Byelorussian SSR",
-    "emailAddress": "john.wich@kkillerbean.com",
+    "emailAddress": "john.wich@killerbean.com",
     "streetAddress": "10, Cypress boulivard, QA1254A, LA",
     "city": "Los Angeles",
     "postcode": "HF254JG"
+  },
+  "cardDetails": {
+    "number": "5363215420318978",
+    "expDate": "0525",
+    "cvc": "525"
   }
 
 }

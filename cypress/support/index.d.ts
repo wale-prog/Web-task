@@ -6,6 +6,7 @@ interface FixtureTypes {
   passengerDetails: typeof Details;
   travelDetail: typeof Details;
   billingDetail: typeof Details
+  cardDetails: typeof Details
 }
 
 declare global {

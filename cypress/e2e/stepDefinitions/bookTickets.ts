@@ -58,19 +58,19 @@ Given(`user fills the billing details`, () => {
         person.city, 
         person.county, 
         person.postcode
-    )
-    cy.wait(10000)
-    
+    )    
 });
 
 Given(`user select debit and credit card option`, () => {
-    
+    buyTicketPage.selectDebitAndCreditCard()
 });
 
 When(`user fill the card details and click place order`, () => {
-    
+    const card = data.cardDetails
+    buyTicketPage.enterCardDetails(card.number, card.expDate, card.cvc)
 });
 
-Then(`an error {string} is displayed`, (arg0) => {
-    
+Then(`an error {string} is displayed`, (errorMsg) => {
+    cy.wait(10000)
+    buyTicketPage.getCardErrorMessage().should('contain.text', errorMsg)
 });

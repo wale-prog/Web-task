@@ -7,6 +7,7 @@ import { defineConfig } from "cypress";
 
 export default defineConfig({
   scrollBehavior: "center",
+  chromeWebSecurity: false,
   e2e: {
     async setupNodeEvents(on: any, config: any) {
       const builder = createBuilder({
