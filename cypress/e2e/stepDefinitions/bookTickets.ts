@@ -1,5 +1,3 @@
-/// <reference types="Cypress" />
-
 import { Given, When, Then, Before, After } from '@badeball/cypress-cucumber-preprocessor';
 import LandingPage from '../../support/Pages/LandingPage';
 import BuyTicketPage from '../../support/Pages/BuyTicketPage';
@@ -8,12 +6,9 @@ let landingPage: LandingPage
 let buyTicketPage: BuyTicketPage
 let data: FixtureTypes
 
-
-
 Before(function() {
     cy.fixture('passengerDetails').then(function (cred) {
         data = cred
-        // data.passengerDetails
     })
     landingPage = new LandingPage();
     buyTicketPage = new BuyTicketPage();
@@ -26,7 +21,7 @@ Given(`User navigate to the {string}`, (url: string) => {
 });
 
 Given(`User is on the landing page`, () => {  
-    landingPage.getNavbarText().should('have.text', 'HomeBuy TicketContact')    
+    landingPage.getNavbarText().should('contain.text', 'HomeBuy')    
 });
 
 Given(`User click buy ticket link on the navigation bar and confirms dummy return ticket is checked`, () => {

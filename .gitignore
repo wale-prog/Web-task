@@ -1,3 +1,5 @@
 node_modules
-mochawesome-report/
 cypress/screenshots/
+cypress/reports/htmlReport/
+cypress/reports/jsonReport/
+cypress/downloads/

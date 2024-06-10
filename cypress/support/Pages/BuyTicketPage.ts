@@ -1,5 +1,3 @@
-///<reference types="cypress-iframe" />
-
 class BuyTicketPage {
   getReturnTcket() {
     return cy.get("#product_550");
@@ -83,11 +81,6 @@ class BuyTicketPage {
   selectDebitAndCreditCard() {
     cy.get("#payment_method_yith-stripe").check();
   }
-
-  // getcardDetailsIframe() {
-  //   return cy.get('iframe[title="Secure card number input frame"]')
-
-  // }
 
   enterCardDetails(cardNumber: string, expDate: string, cvc: string) {
     const cardNumberFrame = cy

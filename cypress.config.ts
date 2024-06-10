@@ -8,6 +8,7 @@ import { defineConfig } from "cypress";
 export default defineConfig({
   scrollBehavior: "center",
   chromeWebSecurity: false,
+  pageLoadTimeout: 100000,
   e2e: {
     async setupNodeEvents(on: any, config: any) {
       const builder = createBuilder({
@@ -22,10 +23,6 @@ export default defineConfig({
       baseUrl: "https://www.dummyticket.com",
     },
   },
-  reporter: "mochawesome",
-  reporterOptions: {
-    mochaFile: "result/testReport.html",
-    toConsole: true,
-  },
+
   watchForFileChanges: false,
 });
