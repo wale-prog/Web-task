@@ -24,7 +24,7 @@ Given(`User is on the landing page`, () => {
     landingPage.getNavbarText().should('contain.text', 'HomeBuy')    
 });
 
-Given(`User click buy ticket link on the navigation bar and confirms dummy return ticket is checked`, () => {
+Given(`User click buy ticket link on the navigation bar and confirms {string} radio button is checked`, (msg: string) => {
     landingPage.clickBuyTicketLink()
     buyTicketPage.getReturnTcket().should('be.checked')
 });
@@ -65,7 +65,7 @@ When(`user fill the card details and click place order`, () => {
     buyTicketPage.enterCardDetails(card.number, card.expDate, card.cvc)
 });
 
-Then(`an error {string} is displayed`, (errorMsg) => {
+Then(`a message {string} is displayed`, (errorMsg) => {
     cy.wait(10000)
     buyTicketPage.getCardErrorMessage().should('contain.text', errorMsg)
 });
