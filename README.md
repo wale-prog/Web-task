@@ -13,7 +13,7 @@
 - cypress-cucumber-preprocessor
 
 ## Demo
-[Video walkthrough]()
+[Video walkthrough](https://www.loom.com/share/a271c668f8b6490da33ad126d0a503bf?sid=81557151-e864-4cf1-9893-b1fe1574e02a)
 
 ### Prerequisites
 
