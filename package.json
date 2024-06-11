@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress run --browser chrome --headed",
-    "openReport": "npx ts-node ./index.ts",
-    "cy-test": "npm test & npm run openReport"
+    "cy-test": "npx cypress run --browser chrome --headed",
+    "test": "npm run cy-test & npx ts-node ./index.ts"
   },
   "repository": {
     "type": "git",
@@ -21,7 +20,6 @@
   "devDependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^20.0.6",
     "@bahmutov/cypress-esbuild-preprocessor": "^2.2.1",
-    "@shelex/cypress-allure-plugin": "^2.40.2",
     "@types/node": "^20.14.2",
     "cucumber-html-reporter": "^7.1.1",
     "cypress": "^13.11.0",
