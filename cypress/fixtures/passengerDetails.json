@@ -1,0 +1,32 @@
+{
+  "passengerDetails": {
+    "firstName": "John",
+    "lastName": "Wich",
+    "orderNote": "Friendship Means Little When It's Convenient",
+    "DateOfBirth": "02/09/1964"
+  },
+
+  "travelDetail": {
+    "fromCity": "Belarus",
+    "toCity": "Miami",
+    "departureDate": "2024/Jul/21",
+    "additionalInfo": "You Wanna Hole Up In This Place Until They Come and Kill You? That’s Not A Plan. That Is An Unscheduled Funeral."
+  },
+
+  "billingDetail": {
+    "billingName": "John Wich",
+    "phone": "1 5151 5487",
+    "country": "Russia",
+    "county": " Byelorussian SSR",
+    "emailAddress": "john.wich@killerbean.com",
+    "streetAddress": "10, Cypress boulivard, QA1254A, LA",
+    "city": "Los Angeles",
+    "postcode": "HF254JG"
+  },
+  "cardDetails": {
+    "number": "5363215420318978",
+    "expDate": "0525",
+    "cvc": "525"
+  }
+
+}
